@@ -1,0 +1,545 @@
+\hypertarget{classcrimen}{\subsection{Referencia de la Clase crimen}
+\label{classcrimen}\index{crimen@{crimen}}
+}
+
+
+Clase crimen, asociada a la definición de un crimen.  
+
+
+
+
+{\ttfamily \#include $<$crimen.\-h$>$}
+
+\subsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcrimen_ab1147e36869c7e635699e4ef746a7555}{crimen} ()
+\begin{DoxyCompactList}\small\item\em Constructor primitivo. \end{DoxyCompactList}\item 
+\hyperlink{classcrimen_a50b783e821c2f5bc829eceb9048c12d7}{crimen} (const \hyperlink{classcrimen}{crimen} \&x)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+void \hyperlink{classcrimen_a2675734f5049f41b5fb5dbc4778df7f8}{set\-I\-D} (long int \&id)
+\begin{DoxyCompactList}\small\item\em Establece la I\-D del crimen. \end{DoxyCompactList}\item 
+void \hyperlink{classcrimen_a98ee8c42a0ec09c704c5f17e812a6bd5}{set\-Case\-Number} (const string \&s)
+\begin{DoxyCompactList}\small\item\em Establece el número de caso. \end{DoxyCompactList}\item 
+void \hyperlink{classcrimen_ac308c139bb8b599a7badbecd91bfbc5a}{set\-Date} (const \hyperlink{classfecha}{fecha} \&d)
+\begin{DoxyCompactList}\small\item\em Establece la fecha del crimen. \end{DoxyCompactList}\item 
+void \hyperlink{classcrimen_a7acfecba5cda34a7dd659f12c5ed038e}{set\-I\-U\-C\-R} (const string \&I\-U)
+\begin{DoxyCompactList}\small\item\em Establece la I\-U\-C\-R (Illinois Uniform Crime Reporting) del crimen. \end{DoxyCompactList}\item 
+void \hyperlink{classcrimen_ab628dc99fbeea8d93368e0959753bfd1}{set\-Primary\-Type} (const string \&P\-Type)
+\begin{DoxyCompactList}\small\item\em Establece tipo de delito. \end{DoxyCompactList}\item 
+void \hyperlink{classcrimen_adf289fedce791ebe465c6b010f2d1def}{set\-Description} (const string \&Desc)
+\begin{DoxyCompactList}\small\item\em Establece la descripción del crimen. \end{DoxyCompactList}\item 
+void \hyperlink{classcrimen_af67c949829028c8444adc5170e5136a0}{set\-Location\-Description} (const string \&L\-Desc)
+\begin{DoxyCompactList}\small\item\em Establece la descripción del escenario del crimen. \end{DoxyCompactList}\item 
+void \hyperlink{classcrimen_ac29613f3156247daab4baebbcc162e15}{set\-Latitude} (const double \&lat)
+\begin{DoxyCompactList}\small\item\em Establece la latitud en la que se produjo el crimen. \end{DoxyCompactList}\item 
+void \hyperlink{classcrimen_a638ec127cfc3fe030bf87f8a860a076e}{set\-Longitude} (const double \&longt)
+\begin{DoxyCompactList}\small\item\em Establece la longitud en la que se produjo el crimen. \end{DoxyCompactList}\item 
+void \hyperlink{classcrimen_a0ef133be2f38ab05581cb7b6e067bb4a}{set\-Arrest} (const bool a)
+\begin{DoxyCompactList}\small\item\em Establece si se produjo un arresto. \end{DoxyCompactList}\item 
+void \hyperlink{classcrimen_a3fb6571c66f65243e230de466d66e320}{set\-Domestic} (const bool d)
+\begin{DoxyCompactList}\small\item\em Establece si fue crimen doméstico o no. \end{DoxyCompactList}\item 
+long int \hyperlink{classcrimen_a855eab30a304a6498828cb5d85a4e0e3}{get\-I\-D} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve la I\-D del crimen. \end{DoxyCompactList}\item 
+string \hyperlink{classcrimen_ab3c025eb20cdcea9192ee190fa2af015}{get\-Case\-Number} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el número del caso. \end{DoxyCompactList}\item 
+string \hyperlink{classcrimen_a8738020069c3a3b3500d044f9580f93a}{get\-I\-U\-C\-R} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve la I\-U\-C\-R del crimen. \end{DoxyCompactList}\item 
+string \hyperlink{classcrimen_a61789d65209d167149df197272d8feba}{get\-Description} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve la descripción del crimen. \end{DoxyCompactList}\item 
+string \hyperlink{classcrimen_ae47e93acec39b388cde221a679bccf9c}{get\-Primary\-Type} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el tipo de delito. \end{DoxyCompactList}\item 
+string \hyperlink{classcrimen_a9de655b3eea3592f6e5d017e83fd6060}{get\-Location\-Description} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve la descripción del escenario del crimen. \end{DoxyCompactList}\item 
+bool \hyperlink{classcrimen_a6cab67bfdad566ce444236fc7c8df312}{get\-Arrest} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve si se produjo un arresto. \end{DoxyCompactList}\item 
+bool \hyperlink{classcrimen_a1849e7a82111773a6919318b9cf1d05d}{get\-Domestic} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve si fue un crimen doméstico. \end{DoxyCompactList}\item 
+double \hyperlink{classcrimen_adfd62cd48c7d1d0259c007d3f6c39d58}{get\-Latitude} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve la latitud en la que se produjo el crimen. \end{DoxyCompactList}\item 
+double \hyperlink{classcrimen_a0c24726cd34dc975b3fc7c664287a15c}{get\-Longitude} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve la longitud en la que se produjo el crimen. \end{DoxyCompactList}\item 
+\hyperlink{classfecha}{fecha} \hyperlink{classcrimen_a8a6712e536211034819441ab87e1c215}{get\-Date} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve la fecha del crimen. \end{DoxyCompactList}\item 
+\hyperlink{classcrimen}{crimen} \& \hyperlink{classcrimen_a675f3a6e34bf43e20613a96b93cbb407}{operator=} (const \hyperlink{classcrimen}{crimen} \&c)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de asignación. \end{DoxyCompactList}\item 
+bool \hyperlink{classcrimen_aeced9ce4b7486123412975b8884d1ab7}{operator==} (const \hyperlink{classcrimen}{crimen} \&x) const 
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador ==. \end{DoxyCompactList}\item 
+bool \hyperlink{classcrimen_ac865fdb9712f2426d947b1b5546b50e5}{operator$<$} (const \hyperlink{classcrimen}{crimen} \&x) const 
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+long int \hyperlink{classcrimen_a59702f88f0b0c25781ae3d296790dcb8}{I\-D}
+\item 
+string \hyperlink{classcrimen_a710fbf07b3e543c2a1b2e625b144050a}{Case\-Number}
+\item 
+\hyperlink{classfecha}{fecha} \hyperlink{classcrimen_a43fdb792dbc2e2927592fad7fb8b224c}{Date}
+\item 
+string \hyperlink{classcrimen_a064e0e02109feaea19f254ef47a2510c}{I\-U\-C\-R}
+\item 
+string \hyperlink{classcrimen_acc4a8a9f688d306a38519899a8c325a7}{Primary\-Type}
+\item 
+string \hyperlink{classcrimen_aa51b9ddc58248aadefdb8fad7d4cd69b}{Description}
+\item 
+string \hyperlink{classcrimen_a221f7065c470883388174f19ea34d1f3}{Location\-Description}
+\item 
+bool \hyperlink{classcrimen_acf24dca899efd9bf99574f3be0b5ce52}{Arrest}
+\item 
+bool \hyperlink{classcrimen_a53f0bfea0c8ebb03dda9bf7332057477}{Domestic}
+\item 
+double \hyperlink{classcrimen_adaf728df1dacff5a93678d3feb512b7f}{Latitude}
+\item 
+double \hyperlink{classcrimen_a9ffd3c64d12cc4b963b890b8db645964}{Longitude}
+\end{DoxyCompactItemize}
+\subsubsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classcrimen_a70d7dbf132d06cb3c889042765a7da2e}{operator$<$$<$} (ostream \&, const \hyperlink{classcrimen}{crimen} \&)
+\begin{DoxyCompactList}\small\item\em Sobrecarga de la salida estándar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Descripción detallada}
+Clase crimen, asociada a la definición de un crimen. 
+
+\hyperlink{classcrimen_ab1147e36869c7e635699e4ef746a7555}{crimen\-::crimen}, .....
+
+! Métodos --$>$ \hyperlink{classcrimen_ab1147e36869c7e635699e4ef746a7555}{crimen\-::crimen()}, \hyperlink{classcrimen_a50b783e821c2f5bc829eceb9048c12d7}{crimen\-::crimen(const crimen\& x)}, \hyperlink{classcrimen_a2675734f5049f41b5fb5dbc4778df7f8}{set\-I\-D(long int \& id)}, \hyperlink{classcrimen_a98ee8c42a0ec09c704c5f17e812a6bd5}{set\-Case\-Number(const string \&  s)}, \hyperlink{classcrimen_ac308c139bb8b599a7badbecd91bfbc5a}{set\-Date(const fecha \& d)}, \hyperlink{classcrimen_a7acfecba5cda34a7dd659f12c5ed038e}{set\-I\-U\-C\-R(const string \&\-I\-U)}, \hyperlink{classcrimen_ab628dc99fbeea8d93368e0959753bfd1}{set\-Primary\-Type(const string \&\-P\-Type)}, \hyperlink{classcrimen_adf289fedce791ebe465c6b010f2d1def}{set\-Description(const string \&\-Desc)}, \hyperlink{classcrimen_af67c949829028c8444adc5170e5136a0}{set\-Location\-Description(const string \&\-L\-Desc)}, \hyperlink{classcrimen_ac29613f3156247daab4baebbcc162e15}{set\-Latitude(const double \&lat)}, \hyperlink{classcrimen_a638ec127cfc3fe030bf87f8a860a076e}{set\-Longitude(const double \&longt)}, \hyperlink{classcrimen_a0ef133be2f38ab05581cb7b6e067bb4a}{set\-Arrest(const bool a)}, \hyperlink{classcrimen_a3fb6571c66f65243e230de466d66e320}{set\-Domestic(const bool d)}, \hyperlink{classcrimen_a855eab30a304a6498828cb5d85a4e0e3}{get\-I\-D( )}, \hyperlink{classcrimen_ab3c025eb20cdcea9192ee190fa2af015}{get\-Case\-Number( )}, \hyperlink{classcrimen_a8738020069c3a3b3500d044f9580f93a}{get\-I\-U\-C\-R()}, \hyperlink{classcrimen_a61789d65209d167149df197272d8feba}{get\-Description()}, \hyperlink{classcrimen_ae47e93acec39b388cde221a679bccf9c}{get\-Primary\-Type()}, \hyperlink{classcrimen_a9de655b3eea3592f6e5d017e83fd6060}{get\-Location\-Description()}, \hyperlink{classcrimen_a6cab67bfdad566ce444236fc7c8df312}{get\-Arrest()}, \hyperlink{classcrimen_a1849e7a82111773a6919318b9cf1d05d}{get\-Domestic()}, \hyperlink{classcrimen_adfd62cd48c7d1d0259c007d3f6c39d58}{get\-Latitude()}, \hyperlink{classcrimen_a0c24726cd34dc975b3fc7c664287a15c}{get\-Longitude()}, \hyperlink{classcrimen_a8a6712e536211034819441ab87e1c215}{get\-Date( )}
+
+Descripción Contiene toda la información asociada a un crimen. 
+
+\subsubsection{Documentación del constructor y destructor}
+\hypertarget{classcrimen_ab1147e36869c7e635699e4ef746a7555}{\index{crimen@{crimen}!crimen@{crimen}}
+\index{crimen@{crimen}!crimen@{crimen}}
+\paragraph[{crimen}]{\setlength{\rightskip}{0pt plus 5cm}crimen\-::crimen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_ab1147e36869c7e635699e4ef746a7555}
+
+
+Constructor primitivo. 
+
+\hypertarget{classcrimen_a50b783e821c2f5bc829eceb9048c12d7}{\index{crimen@{crimen}!crimen@{crimen}}
+\index{crimen@{crimen}!crimen@{crimen}}
+\paragraph[{crimen}]{\setlength{\rightskip}{0pt plus 5cm}crimen\-::crimen (
+\begin{DoxyParamCaption}
+\item[{const {\bf crimen} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_a50b783e821c2f5bc829eceb9048c12d7}
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em x} & objeto crimen a copiar \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Documentación de las funciones miembro}
+\hypertarget{classcrimen_a6cab67bfdad566ce444236fc7c8df312}{\index{crimen@{crimen}!get\-Arrest@{get\-Arrest}}
+\index{get\-Arrest@{get\-Arrest}!crimen@{crimen}}
+\paragraph[{get\-Arrest}]{\setlength{\rightskip}{0pt plus 5cm}bool crimen\-::get\-Arrest (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcrimen_a6cab67bfdad566ce444236fc7c8df312}
+
+
+Devuelve si se produjo un arresto. 
+
+\begin{DoxyReturn}{Devuelve}
+true si hubo arresto, false en caso contrario 
+\end{DoxyReturn}
+\hypertarget{classcrimen_ab3c025eb20cdcea9192ee190fa2af015}{\index{crimen@{crimen}!get\-Case\-Number@{get\-Case\-Number}}
+\index{get\-Case\-Number@{get\-Case\-Number}!crimen@{crimen}}
+\paragraph[{get\-Case\-Number}]{\setlength{\rightskip}{0pt plus 5cm}string crimen\-::get\-Case\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcrimen_ab3c025eb20cdcea9192ee190fa2af015}
+
+
+Devuelve el número del caso. 
+
+\hypertarget{classcrimen_a8a6712e536211034819441ab87e1c215}{\index{crimen@{crimen}!get\-Date@{get\-Date}}
+\index{get\-Date@{get\-Date}!crimen@{crimen}}
+\paragraph[{get\-Date}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fecha} crimen\-::get\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcrimen_a8a6712e536211034819441ab87e1c215}
+
+
+Devuelve la fecha del crimen. 
+
+\begin{DoxyReturn}{Devuelve}
+devuelve un objeto de la clase Fecha 
+\end{DoxyReturn}
+\hypertarget{classcrimen_a61789d65209d167149df197272d8feba}{\index{crimen@{crimen}!get\-Description@{get\-Description}}
+\index{get\-Description@{get\-Description}!crimen@{crimen}}
+\paragraph[{get\-Description}]{\setlength{\rightskip}{0pt plus 5cm}string crimen\-::get\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcrimen_a61789d65209d167149df197272d8feba}
+
+
+Devuelve la descripción del crimen. 
+
+\hypertarget{classcrimen_a1849e7a82111773a6919318b9cf1d05d}{\index{crimen@{crimen}!get\-Domestic@{get\-Domestic}}
+\index{get\-Domestic@{get\-Domestic}!crimen@{crimen}}
+\paragraph[{get\-Domestic}]{\setlength{\rightskip}{0pt plus 5cm}bool crimen\-::get\-Domestic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcrimen_a1849e7a82111773a6919318b9cf1d05d}
+
+
+Devuelve si fue un crimen doméstico. 
+
+\begin{DoxyReturn}{Devuelve}
+true si fue doméstico, false en caso contrario 
+\end{DoxyReturn}
+\hypertarget{classcrimen_a855eab30a304a6498828cb5d85a4e0e3}{\index{crimen@{crimen}!get\-I\-D@{get\-I\-D}}
+\index{get\-I\-D@{get\-I\-D}!crimen@{crimen}}
+\paragraph[{get\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}long int crimen\-::get\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcrimen_a855eab30a304a6498828cb5d85a4e0e3}
+
+
+Devuelve la I\-D del crimen. 
+
+\hypertarget{classcrimen_a8738020069c3a3b3500d044f9580f93a}{\index{crimen@{crimen}!get\-I\-U\-C\-R@{get\-I\-U\-C\-R}}
+\index{get\-I\-U\-C\-R@{get\-I\-U\-C\-R}!crimen@{crimen}}
+\paragraph[{get\-I\-U\-C\-R}]{\setlength{\rightskip}{0pt plus 5cm}string crimen\-::get\-I\-U\-C\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcrimen_a8738020069c3a3b3500d044f9580f93a}
+
+
+Devuelve la I\-U\-C\-R del crimen. 
+
+\hypertarget{classcrimen_adfd62cd48c7d1d0259c007d3f6c39d58}{\index{crimen@{crimen}!get\-Latitude@{get\-Latitude}}
+\index{get\-Latitude@{get\-Latitude}!crimen@{crimen}}
+\paragraph[{get\-Latitude}]{\setlength{\rightskip}{0pt plus 5cm}double crimen\-::get\-Latitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcrimen_adfd62cd48c7d1d0259c007d3f6c39d58}
+
+
+Devuelve la latitud en la que se produjo el crimen. 
+
+\hypertarget{classcrimen_a9de655b3eea3592f6e5d017e83fd6060}{\index{crimen@{crimen}!get\-Location\-Description@{get\-Location\-Description}}
+\index{get\-Location\-Description@{get\-Location\-Description}!crimen@{crimen}}
+\paragraph[{get\-Location\-Description}]{\setlength{\rightskip}{0pt plus 5cm}string crimen\-::get\-Location\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcrimen_a9de655b3eea3592f6e5d017e83fd6060}
+
+
+Devuelve la descripción del escenario del crimen. 
+
+\hypertarget{classcrimen_a0c24726cd34dc975b3fc7c664287a15c}{\index{crimen@{crimen}!get\-Longitude@{get\-Longitude}}
+\index{get\-Longitude@{get\-Longitude}!crimen@{crimen}}
+\paragraph[{get\-Longitude}]{\setlength{\rightskip}{0pt plus 5cm}double crimen\-::get\-Longitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcrimen_a0c24726cd34dc975b3fc7c664287a15c}
+
+
+Devuelve la longitud en la que se produjo el crimen. 
+
+\hypertarget{classcrimen_ae47e93acec39b388cde221a679bccf9c}{\index{crimen@{crimen}!get\-Primary\-Type@{get\-Primary\-Type}}
+\index{get\-Primary\-Type@{get\-Primary\-Type}!crimen@{crimen}}
+\paragraph[{get\-Primary\-Type}]{\setlength{\rightskip}{0pt plus 5cm}string crimen\-::get\-Primary\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcrimen_ae47e93acec39b388cde221a679bccf9c}
+
+
+Devuelve el tipo de delito. 
+
+\hypertarget{classcrimen_ac865fdb9712f2426d947b1b5546b50e5}{\index{crimen@{crimen}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!crimen@{crimen}}
+\paragraph[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool crimen\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf crimen} \&}]{x}
+\end{DoxyParamCaption}
+) const}}\label{classcrimen_ac865fdb9712f2426d947b1b5546b50e5}
+
+
+Sobrecarga del operador $<$. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve true si la I\-D es menor. 
+\end{DoxyReturn}
+\hypertarget{classcrimen_a675f3a6e34bf43e20613a96b93cbb407}{\index{crimen@{crimen}!operator=@{operator=}}
+\index{operator=@{operator=}!crimen@{crimen}}
+\paragraph[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf crimen}\& crimen\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf crimen} \&}]{c}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_a675f3a6e34bf43e20613a96b93cbb407}
+
+
+Sobrecarga del operador de asignación. 
+
+\hypertarget{classcrimen_aeced9ce4b7486123412975b8884d1ab7}{\index{crimen@{crimen}!operator==@{operator==}}
+\index{operator==@{operator==}!crimen@{crimen}}
+\paragraph[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool crimen\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf crimen} \&}]{x}
+\end{DoxyParamCaption}
+) const}}\label{classcrimen_aeced9ce4b7486123412975b8884d1ab7}
+
+
+Sobrecarga del operador ==. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve true si la I\-D de dos casos es la misma, false en caso contrario. 
+\end{DoxyReturn}
+\hypertarget{classcrimen_a0ef133be2f38ab05581cb7b6e067bb4a}{\index{crimen@{crimen}!set\-Arrest@{set\-Arrest}}
+\index{set\-Arrest@{set\-Arrest}!crimen@{crimen}}
+\paragraph[{set\-Arrest}]{\setlength{\rightskip}{0pt plus 5cm}void crimen\-::set\-Arrest (
+\begin{DoxyParamCaption}
+\item[{const bool}]{a}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_a0ef133be2f38ab05581cb7b6e067bb4a}
+
+
+Establece si se produjo un arresto. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em a} & true si se produjo, false en caso contrario \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcrimen_a98ee8c42a0ec09c704c5f17e812a6bd5}{\index{crimen@{crimen}!set\-Case\-Number@{set\-Case\-Number}}
+\index{set\-Case\-Number@{set\-Case\-Number}!crimen@{crimen}}
+\paragraph[{set\-Case\-Number}]{\setlength{\rightskip}{0pt plus 5cm}void crimen\-::set\-Case\-Number (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_a98ee8c42a0ec09c704c5f17e812a6bd5}
+
+
+Establece el número de caso. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em s} & Número del caso, formato string \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcrimen_ac308c139bb8b599a7badbecd91bfbc5a}{\index{crimen@{crimen}!set\-Date@{set\-Date}}
+\index{set\-Date@{set\-Date}!crimen@{crimen}}
+\paragraph[{set\-Date}]{\setlength{\rightskip}{0pt plus 5cm}void crimen\-::set\-Date (
+\begin{DoxyParamCaption}
+\item[{const {\bf fecha} \&}]{d}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_ac308c139bb8b599a7badbecd91bfbc5a}
+
+
+Establece la fecha del crimen. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em d} & objeto de la clase Fecha \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcrimen_adf289fedce791ebe465c6b010f2d1def}{\index{crimen@{crimen}!set\-Description@{set\-Description}}
+\index{set\-Description@{set\-Description}!crimen@{crimen}}
+\paragraph[{set\-Description}]{\setlength{\rightskip}{0pt plus 5cm}void crimen\-::set\-Description (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{Desc}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_adf289fedce791ebe465c6b010f2d1def}
+
+
+Establece la descripción del crimen. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em Desc} & Descripción en formato string \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcrimen_a3fb6571c66f65243e230de466d66e320}{\index{crimen@{crimen}!set\-Domestic@{set\-Domestic}}
+\index{set\-Domestic@{set\-Domestic}!crimen@{crimen}}
+\paragraph[{set\-Domestic}]{\setlength{\rightskip}{0pt plus 5cm}void crimen\-::set\-Domestic (
+\begin{DoxyParamCaption}
+\item[{const bool}]{d}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_a3fb6571c66f65243e230de466d66e320}
+
+
+Establece si fue crimen doméstico o no. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em d} & true si lo fue, false en caso contrario \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcrimen_a2675734f5049f41b5fb5dbc4778df7f8}{\index{crimen@{crimen}!set\-I\-D@{set\-I\-D}}
+\index{set\-I\-D@{set\-I\-D}!crimen@{crimen}}
+\paragraph[{set\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}void crimen\-::set\-I\-D (
+\begin{DoxyParamCaption}
+\item[{long int \&}]{id}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_a2675734f5049f41b5fb5dbc4778df7f8}
+
+
+Establece la I\-D del crimen. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em id} & I\-D \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcrimen_a7acfecba5cda34a7dd659f12c5ed038e}{\index{crimen@{crimen}!set\-I\-U\-C\-R@{set\-I\-U\-C\-R}}
+\index{set\-I\-U\-C\-R@{set\-I\-U\-C\-R}!crimen@{crimen}}
+\paragraph[{set\-I\-U\-C\-R}]{\setlength{\rightskip}{0pt plus 5cm}void crimen\-::set\-I\-U\-C\-R (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{I\-U}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_a7acfecba5cda34a7dd659f12c5ed038e}
+
+
+Establece la I\-U\-C\-R (Illinois Uniform Crime Reporting) del crimen. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em I\-U} & I\-U\-C\-R,formato string \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcrimen_ac29613f3156247daab4baebbcc162e15}{\index{crimen@{crimen}!set\-Latitude@{set\-Latitude}}
+\index{set\-Latitude@{set\-Latitude}!crimen@{crimen}}
+\paragraph[{set\-Latitude}]{\setlength{\rightskip}{0pt plus 5cm}void crimen\-::set\-Latitude (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{lat}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_ac29613f3156247daab4baebbcc162e15}
+
+
+Establece la latitud en la que se produjo el crimen. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em lat} & Latitud \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcrimen_af67c949829028c8444adc5170e5136a0}{\index{crimen@{crimen}!set\-Location\-Description@{set\-Location\-Description}}
+\index{set\-Location\-Description@{set\-Location\-Description}!crimen@{crimen}}
+\paragraph[{set\-Location\-Description}]{\setlength{\rightskip}{0pt plus 5cm}void crimen\-::set\-Location\-Description (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{L\-Desc}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_af67c949829028c8444adc5170e5136a0}
+
+
+Establece la descripción del escenario del crimen. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em L\-Desc} & Descripcion del escenario, formato string \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcrimen_a638ec127cfc3fe030bf87f8a860a076e}{\index{crimen@{crimen}!set\-Longitude@{set\-Longitude}}
+\index{set\-Longitude@{set\-Longitude}!crimen@{crimen}}
+\paragraph[{set\-Longitude}]{\setlength{\rightskip}{0pt plus 5cm}void crimen\-::set\-Longitude (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{longt}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_a638ec127cfc3fe030bf87f8a860a076e}
+
+
+Establece la longitud en la que se produjo el crimen. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em longt} & Longitud \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcrimen_ab628dc99fbeea8d93368e0959753bfd1}{\index{crimen@{crimen}!set\-Primary\-Type@{set\-Primary\-Type}}
+\index{set\-Primary\-Type@{set\-Primary\-Type}!crimen@{crimen}}
+\paragraph[{set\-Primary\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void crimen\-::set\-Primary\-Type (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{P\-Type}
+\end{DoxyParamCaption}
+)}}\label{classcrimen_ab628dc99fbeea8d93368e0959753bfd1}
+
+
+Establece tipo de delito. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em P\-Type} & Tipo de delito, formato string \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Documentación de las funciones relacionadas y clases amigas}
+\hypertarget{classcrimen_a70d7dbf132d06cb3c889042765a7da2e}{\index{crimen@{crimen}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!crimen@{crimen}}
+\paragraph[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{, }
+\item[{const {\bf crimen} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classcrimen_a70d7dbf132d06cb3c889042765a7da2e}
+
+
+Sobrecarga de la salida estándar. 
+
+\begin{DoxyReturn}{Devuelve}
+Escribe cada uno de los atributos junto a su valor en una línea distinta. 
+\end{DoxyReturn}
+
+
+\subsubsection{Documentación de los datos miembro}
+\hypertarget{classcrimen_acf24dca899efd9bf99574f3be0b5ce52}{\index{crimen@{crimen}!Arrest@{Arrest}}
+\index{Arrest@{Arrest}!crimen@{crimen}}
+\paragraph[{Arrest}]{\setlength{\rightskip}{0pt plus 5cm}bool crimen\-::\-Arrest\hspace{0.3cm}{\ttfamily [private]}}}\label{classcrimen_acf24dca899efd9bf99574f3be0b5ce52}
+\hypertarget{classcrimen_a710fbf07b3e543c2a1b2e625b144050a}{\index{crimen@{crimen}!Case\-Number@{Case\-Number}}
+\index{Case\-Number@{Case\-Number}!crimen@{crimen}}
+\paragraph[{Case\-Number}]{\setlength{\rightskip}{0pt plus 5cm}string crimen\-::\-Case\-Number\hspace{0.3cm}{\ttfamily [private]}}}\label{classcrimen_a710fbf07b3e543c2a1b2e625b144050a}
+\hypertarget{classcrimen_a43fdb792dbc2e2927592fad7fb8b224c}{\index{crimen@{crimen}!Date@{Date}}
+\index{Date@{Date}!crimen@{crimen}}
+\paragraph[{Date}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fecha} crimen\-::\-Date\hspace{0.3cm}{\ttfamily [private]}}}\label{classcrimen_a43fdb792dbc2e2927592fad7fb8b224c}
+\hypertarget{classcrimen_aa51b9ddc58248aadefdb8fad7d4cd69b}{\index{crimen@{crimen}!Description@{Description}}
+\index{Description@{Description}!crimen@{crimen}}
+\paragraph[{Description}]{\setlength{\rightskip}{0pt plus 5cm}string crimen\-::\-Description\hspace{0.3cm}{\ttfamily [private]}}}\label{classcrimen_aa51b9ddc58248aadefdb8fad7d4cd69b}
+\hypertarget{classcrimen_a53f0bfea0c8ebb03dda9bf7332057477}{\index{crimen@{crimen}!Domestic@{Domestic}}
+\index{Domestic@{Domestic}!crimen@{crimen}}
+\paragraph[{Domestic}]{\setlength{\rightskip}{0pt plus 5cm}bool crimen\-::\-Domestic\hspace{0.3cm}{\ttfamily [private]}}}\label{classcrimen_a53f0bfea0c8ebb03dda9bf7332057477}
+\hypertarget{classcrimen_a59702f88f0b0c25781ae3d296790dcb8}{\index{crimen@{crimen}!I\-D@{I\-D}}
+\index{I\-D@{I\-D}!crimen@{crimen}}
+\paragraph[{I\-D}]{\setlength{\rightskip}{0pt plus 5cm}long int crimen\-::\-I\-D\hspace{0.3cm}{\ttfamily [private]}}}\label{classcrimen_a59702f88f0b0c25781ae3d296790dcb8}
+\hypertarget{classcrimen_a064e0e02109feaea19f254ef47a2510c}{\index{crimen@{crimen}!I\-U\-C\-R@{I\-U\-C\-R}}
+\index{I\-U\-C\-R@{I\-U\-C\-R}!crimen@{crimen}}
+\paragraph[{I\-U\-C\-R}]{\setlength{\rightskip}{0pt plus 5cm}string crimen\-::\-I\-U\-C\-R\hspace{0.3cm}{\ttfamily [private]}}}\label{classcrimen_a064e0e02109feaea19f254ef47a2510c}
+\hypertarget{classcrimen_adaf728df1dacff5a93678d3feb512b7f}{\index{crimen@{crimen}!Latitude@{Latitude}}
+\index{Latitude@{Latitude}!crimen@{crimen}}
+\paragraph[{Latitude}]{\setlength{\rightskip}{0pt plus 5cm}double crimen\-::\-Latitude\hspace{0.3cm}{\ttfamily [private]}}}\label{classcrimen_adaf728df1dacff5a93678d3feb512b7f}
+\hypertarget{classcrimen_a221f7065c470883388174f19ea34d1f3}{\index{crimen@{crimen}!Location\-Description@{Location\-Description}}
+\index{Location\-Description@{Location\-Description}!crimen@{crimen}}
+\paragraph[{Location\-Description}]{\setlength{\rightskip}{0pt plus 5cm}string crimen\-::\-Location\-Description\hspace{0.3cm}{\ttfamily [private]}}}\label{classcrimen_a221f7065c470883388174f19ea34d1f3}
+\hypertarget{classcrimen_a9ffd3c64d12cc4b963b890b8db645964}{\index{crimen@{crimen}!Longitude@{Longitude}}
+\index{Longitude@{Longitude}!crimen@{crimen}}
+\paragraph[{Longitude}]{\setlength{\rightskip}{0pt plus 5cm}double crimen\-::\-Longitude\hspace{0.3cm}{\ttfamily [private]}}}\label{classcrimen_a9ffd3c64d12cc4b963b890b8db645964}
+\hypertarget{classcrimen_acc4a8a9f688d306a38519899a8c325a7}{\index{crimen@{crimen}!Primary\-Type@{Primary\-Type}}
+\index{Primary\-Type@{Primary\-Type}!crimen@{crimen}}
+\paragraph[{Primary\-Type}]{\setlength{\rightskip}{0pt plus 5cm}string crimen\-::\-Primary\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{classcrimen_acc4a8a9f688d306a38519899a8c325a7}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{crimen_8h}{crimen.\-h}\end{DoxyCompactItemize}

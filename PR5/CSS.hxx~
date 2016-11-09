@@ -1,0 +1,204 @@
+#include "CSS.h"
+#include <iostream>
+#include <functional>
+#include "crimen.h"
+#include "fecha.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+bool to_bool(const string& str){
+	return ( str=="true");
+}
+
+void CSS::load(string nombreDB){
+	////////////////////////
+	clock_t start, end;
+	///////////////////////
+	 ifstream fe;
+	 string cadena;
+		int principio,fin;
+		crimen crim;
+
+	 cout << "Abrimos "<< nombreDB << endl;
+	 fe.open(nombreDB.c_str(), ifstream::in);
+	 if (fe.fail()){
+	   cerr << "Error al abrir el fichero " << nombreDB << endl;
+	 } else {
+	   getline(fe,cadena,'\n'); //leo la cabecera del fichero
+	   //cout << cadena << endl;
+		int contador=0;
+		while (contador<1000)//!fe.eof()
+		  {contador++; 
+				getline(fe,cadena,'\n');
+		   	if (!fe.eof()) {
+		   //cout << "leo:: "<< cadena << endl;
+		   // Convertir cadena a crimen
+		  principio=0;
+				//set    ID
+			fin=cadena.find_first_of(',',principio);
+			long int aux=stol(cadena.substr(principio,fin-principio));
+			crim.setID(aux);
+			principio=fin;
+				//set    CASE_NUMBER
+			fin=cadena.find_first_of(',',principio+1);
+			crim.setCaseNumber(cadena.substr(principio+1,fin-principio-1));
+			principio=fin;
+				//set    DATE
+			fin=cadena.find_first_of(',',principio+1);
+			fecha date(cadena.substr(principio+1,fin-principio-1));
+			crim.setDate(date);
+			principio=fin;
+				//ignora BLOCK
+			fin=cadena.find_first_of(',',principio+1);
+			principio=fin;
+				//set    IUCR
+			fin=cadena.find_first_of(',',principio+1);
+			crim.setIUCR(cadena.substr(principio+1,fin-principio-1));
+			principio=fin;
+				//set    PRIMARY_TYPE
+			fin=cadena.find_first_of(',',principio+1);
+			crim.setPrimaryType(cadena.substr(principio+1,fin-principio-1));
+			principio=fin;
+				//set    DESCRIPTION 
+			fin=cadena.find_first_of(',',principio+1);
+			crim.setDescription(cadena.substr(principio+1,fin-principio-1));
+			principio=fin;
+				//set    LOCATION_DESCRIPTION
+			fin=cadena.find_first_of(',',principio+1);
+			crim.setLocationDescription(cadena.substr(principio+1,fin-principio-1));
+			principio=fin;
+				//set    ARREST
+			fin=cadena.find_first_of(',',principio+1);
+			crim.setArrest(to_bool(cadena.substr(principio+1,fin-principio-1)));
+			principio=fin;
+				//set   DOMESTIC
+			fin=cadena.find_first_of(',',principio+1);
+			crim.setDomestic(to_bool(cadena.substr(principio+1,fin-principio-1)));
+			principio=fin;
+				//ignora BEAT
+			fin=cadena.find_first_of(',',principio+1);
+			principio=fin;
+				//ignora DISTRICT
+			fin=cadena.find_first_of(',',principio+1);
+			principio=fin;
+				//ignora WARD
+			fin=cadena.find_first_of(',',principio+1);
+			principio=fin;
+				//ignora COMMUNITY_AREA
+			fin=cadena.find_first_of(',',principio+1);
+			principio=fin;
+				//ignora FBI_CODE
+			fin=cadena.find_first_of(',',principio+1);
+			principio=fin;
+				//ignora X_COORDINATE
+			fin=cadena.find_first_of(',',principio+1);
+			principio=fin;
+				//ignora Y_COORDINATE
+			fin=cadena.find_first_of(',',principio+1);
+			principio=fin;
+				//ignora YEAR
+			fin=cadena.find_first_of(',',principio+1);
+			principio=fin;
+				//ignora UPDATED_ON
+			fin=cadena.find_first_of(',',principio+1);
+			principio=fin;
+				//set    LATITUDE
+			fin=cadena.find_first_of(',',principio+1);
+			if(fin-principio-1 != 0)
+				crim.setLatitude(stod(cadena.substr(principio+1,fin-principio-1)));
+			principio=fin;
+				//set    LONGITUDE
+			fin=cadena.find_first_of(',',principio+1);
+			if(fin-principio-1 != 0)
+				crim.setLongitude(stod(cadena.substr(principio+1,fin-principio-1)));
+			principio=fin;
+				//ignora LOCATION
+			fin=cadena.find_first_of(',',principio+1);
+				
+		   insert(crim) ;
+			//cout<<crim;
+
+		 	}
+		}
+		fe.close();
+		
+	} // else
+	  	fe.close();   
+}
+
+CSS::CSS(){}
+
+void CSS::insert(const crimen & x){
+	baseDatos[x.getID()]=x;
+	
+	map<ID,crimen>::iterator it;
+	it = baseDatos.find(x.getID());
+	pair<Date,map<ID,crimen>::iterator> par;
+	par.first=x.getDate();
+	par.second=it;
+	DateAccess.insert(par);
+	
+	IUCRAccess[x.getIUCR()].insert(x.getID());
+	/*
+	string cadena;
+	int pos,primpos=0;
+	//dividir la cadena en cosas mas peques para insertar findfirstof(" ")
+	cadena=x.getDescription();
+	while(cadena.find_first_of(" ",primpos)!=cadena.npos){
+		pos=cadena.find_first_of(" ",primpos);
+		index[cadena.substr(primpos,pos-primpos-1)]=x.getID();
+		primpos=pos;
+	}*/
+	
+	pair<Latitud,ID> par1;
+	par1.first=x.getLatitude();
+	par1.second=x.getID();
+	posicionGeo[x.getLongitude()].insert(par1);
+	
+}
+/*
+IUCR_iterator CSS::ibegin(){
+
+}
+
+IUCR_iterator CSS::iend(){
+
+}
+
+IUCR_iterator CSS::lower_bound(IUCR){
+
+}
+
+IUCR_iterator CSS::upper_bound(IUCR){
+
+}
+
+Date_iterator CSS::dbegin(){
+
+}
+
+Date_iterator CSS::dend(){
+
+}
+
+Date_iterator CSS::lower_bound(Date){
+
+}
+
+Date_iterator CSS::upper_bound(Date){
+
+}
+
+iterator CSS::begin(){
+	pair<ID,crimen>::iterator it;
+	it=baseDatos.begin();
+	return it.second;
+}
+
+iterator CSS::end(){
+	pair<ID,crimen>::iterator it;
+	it=baseDatos.end();
+	return it.second();
+}*/
+

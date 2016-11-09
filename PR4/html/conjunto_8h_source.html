@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>CONJUNTO de DELITOS: Fichero Fuente conjunto.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CONJUNTO de DELITOS
+   &#160;<span id="projectnumber">V0</span>
+   </div>
+   <div id="projectbrief">Conjunto Ordenado de Crimenes</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">conjunto.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="conjunto_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __CONJUTO_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __CONJUTO_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span> </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="crimen_8h.html">crimen.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> CMP&gt;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classconjunto.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="classconjunto.html">conjunto</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{  </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classconjunto.html#a14cfd61d0d9f8e883d2b6042bb34c439">   47</a></span>&#160;    vector&lt;crimen&gt; <a class="code" href="classconjunto.html#a14cfd61d0d9f8e883d2b6042bb34c439">vc</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">bool</span> cheq_rep( ) <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//  friend ostream &amp;  operator &lt;&lt; ( ostream &amp; sal, const conjunto &amp; D);</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classconjunto.html#a67171474c4da6cc8efe0c7fafefd2b2d">   50</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classconjunto_1_1iterator.html">iterator</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classconjunto.html#ac220ce1c155db1ac44146c12d178056f">   51</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classconjunto.html#af6b3ee8bd547ea0c444af56c5263adbe">   52</a></span>&#160;    CMP <a class="code" href="classconjunto.html#af6b3ee8bd547ea0c444af56c5263adbe">comp</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classconjunto.html#a7630ace7cb17bcec07daf5804f1a0780">   57</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classcrimen.html">crimen</a> <a class="code" href="classconjunto.html#a7630ace7cb17bcec07daf5804f1a0780">entrada</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classconjunto.html#a0cc9902da62790ec2a6d59f4559c2df5">   60</a></span>&#160;    <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classconjunto.html#a0cc9902da62790ec2a6d59f4559c2df5">size_type</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classconjunto.html">conjunto</a>( );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classconjunto.html">conjunto</a> (<span class="keyword">const</span> <a class="code" href="classconjunto.html">conjunto&lt;CMP&gt;</a> &amp; d);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">class </span><a class="code" href="classconjunto_1_1iterator.html">iterator</a>;  </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">class </span><a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> IT&gt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classconjunto.html">conjunto</a>(<span class="keyword">const</span> IT &amp;ini,<span class="keyword">const</span> IT &amp;fin);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classconjunto_1_1iterator.html">conjunto::iterator</a> find( <span class="keyword">const</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> &amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classconjunto_1_1iterator.html">conjunto::iterator</a> find(<span class="keyword">const</span> <a class="code" href="classcrimen.html">conjunto::entrada</a> &amp;e);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="classconjunto_1_1const__iterator.html">conjunto::const_iterator</a> find(<span class="keyword">const</span> <a class="code" href="classcrimen.html">conjunto::entrada</a> &amp;e) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="classconjunto_1_1const__iterator.html">conjunto::const_iterator</a>  find( <span class="keyword">const</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> &amp; <span class="keywordtype">id</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="classconjunto.html">conjunto</a> findIUCR( <span class="keyword">const</span> <span class="keywordtype">string</span> &amp; iucr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="classconjunto.html">conjunto</a> findDESCR( <span class="keyword">const</span> <span class="keywordtype">string</span> &amp; descr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">bool</span> insert( <span class="keyword">const</span> <a class="code" href="classcrimen.html">conjunto&lt;CMP&gt;::entrada</a> &amp; e);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">bool</span> erase(<span class="keyword">const</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> &amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">bool</span> erase(<span class="keyword">const</span>  <a class="code" href="classcrimen.html">conjunto::entrada</a> &amp; e);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="classconjunto.html">conjunto</a> &amp; operator=( <span class="keyword">const</span> <a class="code" href="classconjunto.html">conjunto&lt;CMP&gt;</a> &amp; org);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="classconjunto.html#a0cc9902da62790ec2a6d59f4559c2df5">size_type</a> size() <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">bool</span> empty() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="classconjunto_1_1iterator.html">iterator</a> begin();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="classconjunto_1_1iterator.html">iterator</a> end();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> cbegin() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> cend() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="classconjunto_1_1iterator.html">iterator</a> lower_bound(<span class="keyword">const</span> <a class="code" href="classcrimen.html">conjunto::entrada</a> &amp;x);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> lower_bound(<span class="keyword">const</span> <a class="code" href="classcrimen.html">conjunto::entrada</a> &amp;x) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="classconjunto_1_1iterator.html">iterator</a> upper_bound(<span class="keyword">const</span> <a class="code" href="classcrimen.html">conjunto::entrada</a> &amp;x);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> upper_bound(<span class="keyword">const</span> <a class="code" href="classcrimen.html">conjunto::entrada</a> &amp;x)<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="classconjunto_1_1iterator.html">  197</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classconjunto_1_1iterator.html">iterator</a> {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;         <a class="code" href="classconjunto_1_1iterator.html">iterator</a>();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;       <a class="code" href="classconjunto_1_1iterator.html">iterator</a> (<span class="keyword">const</span> <a class="code" href="classconjunto_1_1iterator.html">iterator</a> &amp; it);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;       <span class="keyword">const</span> <a class="code" href="classcrimen.html">conjunto::entrada</a> &amp; operator*() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;       <a class="code" href="classconjunto_1_1iterator.html">iterator</a> operator++( <span class="keywordtype">int</span> );</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;       <a class="code" href="classconjunto_1_1iterator.html">iterator</a> &amp; operator++();</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;       <a class="code" href="classconjunto_1_1iterator.html">iterator</a> operator--(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;       <a class="code" href="classconjunto_1_1iterator.html">iterator</a> &amp; operator--();</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;       <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="classconjunto_1_1iterator.html">iterator</a> &amp; it);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;       <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="classconjunto_1_1iterator.html">iterator</a> &amp; it);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;         <a class="code" href="classconjunto_1_1iterator.html">iterator</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classconjunto_1_1iterator.html">iterator</a> &amp; it);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;       <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="classconjunto_1_1iterator.html#a447db18bedcb8f88250a3d1789570e0a">  224</a></span>&#160;           <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classconjunto.html">conjunto</a>&lt;CMP&gt;;</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="classconjunto_1_1iterator.html#a670501cc6724497877d7a131efe50e60">  225</a></span>&#160;           vector&lt;entrada&gt;::iterator <a class="code" href="classconjunto_1_1iterator.html#a670501cc6724497877d7a131efe50e60">itv</a>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;};</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classconjunto_1_1const__iterator.html">  229</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a>();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a>(<span class="keyword">const</span> <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> &amp; it);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a>(<span class="keyword">const</span> <a class="code" href="classconjunto_1_1iterator.html">iterator</a> &amp; it);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="keyword">const</span> <a class="code" href="classcrimen.html">conjunto::entrada</a> &amp; operator*() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> operator++( <span class="keywordtype">int</span> );</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> &amp; operator++();</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> operator--(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> &amp; operator--();</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> &amp; it);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> &amp; it);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> &amp;operator=(<span class="keyword">const</span> <a class="code" href="classconjunto_1_1const__iterator.html">const_iterator</a> &amp; it);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="classconjunto_1_1const__iterator.html#ac5c268b217a387100ff1e562b80cf1e0">  260</a></span>&#160;            vector&lt;entrada&gt;::const_iterator <a class="code" href="classconjunto_1_1const__iterator.html#ac5c268b217a387100ff1e562b80cf1e0">c_itv</a>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="classconjunto_1_1const__iterator.html#a447db18bedcb8f88250a3d1789570e0a">  261</a></span>&#160;            <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classconjunto.html">conjunto</a>&lt;CMP&gt;;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    };</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;};</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">//ostream &amp;  operator &lt;&lt; ( ostream &amp; sal, const conjunto &amp; D);</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor">#include &quot;conjunto.hxx&quot;</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classcrimen_html"><div class="ttname"><a href="classcrimen.html">crimen</a></div><div class="ttdoc">Clase crimen, asociada a la definición de un crimen. </div><div class="ttdef"><b>Definition:</b> crimen.h:34</div></div>
+<div class="ttc" id="classconjunto_1_1const__iterator_html_ac5c268b217a387100ff1e562b80cf1e0"><div class="ttname"><a href="classconjunto_1_1const__iterator.html#ac5c268b217a387100ff1e562b80cf1e0">conjunto::const_iterator::c_itv</a></div><div class="ttdeci">vector&lt; entrada &gt;::const_iterator c_itv</div><div class="ttdef"><b>Definition:</b> conjunto.h:260</div></div>
+<div class="ttc" id="classconjunto_html_a7630ace7cb17bcec07daf5804f1a0780"><div class="ttname"><a href="classconjunto.html#a7630ace7cb17bcec07daf5804f1a0780">conjunto::entrada</a></div><div class="ttdeci">crimen entrada</div><div class="ttdoc">entrada permite hacer referencia al elemento almacenados en cada una de las posiciones del conjunto ...</div><div class="ttdef"><b>Definition:</b> conjunto.h:57</div></div>
+<div class="ttc" id="classconjunto_html"><div class="ttname"><a href="classconjunto.html">conjunto</a></div><div class="ttdoc">Clase conjunto. </div><div class="ttdef"><b>Definition:</b> conjunto.h:44</div></div>
+<div class="ttc" id="classconjunto_html_a0cc9902da62790ec2a6d59f4559c2df5"><div class="ttname"><a href="classconjunto.html#a0cc9902da62790ec2a6d59f4559c2df5">conjunto::size_type</a></div><div class="ttdeci">unsigned int size_type</div><div class="ttdoc">size_type numero de elementos en el conjunto </div><div class="ttdef"><b>Definition:</b> conjunto.h:60</div></div>
+<div class="ttc" id="classconjunto_1_1iterator_html_a670501cc6724497877d7a131efe50e60"><div class="ttname"><a href="classconjunto_1_1iterator.html#a670501cc6724497877d7a131efe50e60">conjunto::iterator::itv</a></div><div class="ttdeci">vector&lt; entrada &gt;::iterator itv</div><div class="ttdef"><b>Definition:</b> conjunto.h:225</div></div>
+<div class="ttc" id="classconjunto_html_a14cfd61d0d9f8e883d2b6042bb34c439"><div class="ttname"><a href="classconjunto.html#a14cfd61d0d9f8e883d2b6042bb34c439">conjunto::vc</a></div><div class="ttdeci">vector&lt; crimen &gt; vc</div><div class="ttdef"><b>Definition:</b> conjunto.h:47</div></div>
+<div class="ttc" id="crimen_8h_html"><div class="ttname"><a href="crimen_8h.html">crimen.h</a></div></div>
+<div class="ttc" id="classconjunto_1_1iterator_html"><div class="ttname"><a href="classconjunto_1_1iterator.html">conjunto::iterator</a></div><div class="ttdef"><b>Definition:</b> conjunto.h:197</div></div>
+<div class="ttc" id="classconjunto_html_af6b3ee8bd547ea0c444af56c5263adbe"><div class="ttname"><a href="classconjunto.html#af6b3ee8bd547ea0c444af56c5263adbe">conjunto::comp</a></div><div class="ttdeci">CMP comp</div><div class="ttdef"><b>Definition:</b> conjunto.h:52</div></div>
+<div class="ttc" id="classconjunto_1_1const__iterator_html"><div class="ttname"><a href="classconjunto_1_1const__iterator.html">conjunto::const_iterator</a></div><div class="ttdef"><b>Definition:</b> conjunto.h:229</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,130 @@
+#ifndef __AVL_H
+#define __AVL_H
+#include <string>
+#include <vector>
+#include <iostream> 
+#include "bintree.h"
+#include <utility>
+using namespace std;
+
+template <typename T, class comparar=less<T> >
+class AVL {
+public:
+    typedef int altura;
+    typedef unsigned int size_type;
+    class iterator;
+	class const_iterator;
+	class reverse_iterator;
+	class const_reverse_iterator;
+//constructores
+	AVL();
+	AVL(const T & a);
+	AVL(const AVL<T,comparar> & a);
+//operador de asignacion
+	AVL<T,comparar> &operator=(const AVL<T,comparar>& a);
+//iteradores
+	iterator begin();
+	iterator end();
+	reverse_iterator rbegin();
+	reverse_iterator rend();
+	const_iterator cbegin() const;
+	const_iterator cend() const;
+	const_reverse_iterator crbegin() const;
+	const_reverse_iterator crend() const;
+//Capacidad
+	bool empty();
+	size_type size();
+//Modificadores:
+	pair<iterator,bool> insert(const T& val);
+	void erase(iterator pos);
+	void swap(AVL<T,comparar> & x);
+	void clear();
+//Operaciones:
+	void RSI(typename bintree<pair<T,altura> >::node & n);
+	void RSD(typename bintree<pair<T,altura> >::node & n);
+	iterator find(const T& val);
+	iterator lower_bound(const T& val);
+	iterator upper_bound(const T& val);
+	
+	class iterator{
+		public:
+			iterator();
+			iterator(const iterator & it);
+			T operator*();
+			iterator & operator++();
+			iterator & operator--();
+			bool operator==(const iterator & it);
+			bool operator!=(const iterator & it);
+			iterator & operator=(const iterator & it);
+		private:
+			friend class AVL;
+			typename bintree<pair<T,altura>>::inorder_iterator iter;
+	};
+	
+	class const_iterator{
+		public:
+			const_iterator();
+			const_iterator(const const_iterator & it);
+			const_iterator(const iterator & it);
+			T operator*();
+			const_iterator & operator++();
+			const_iterator & operator--();
+			bool operator==(const const_iterator & it);
+			bool operator!=(const const_iterator & it);
+			const_iterator & operator=(const const_iterator & it);			
+		private:
+			friend class AVL;
+			typename bintree<pair<T,altura>>::const_inorder_iterator iter;
+			
+	};
+	
+	class reverse_iterator{
+		public:
+			reverse_iterator();
+			reverse_iterator(const reverse_iterator & it);
+			T operator*();
+			reverse_iterator & operator++();
+			reverse_iterator & operator--();
+			bool operator==(const reverse_iterator & it);
+			bool operator!=(const reverse_iterator & it);
+			reverse_iterator & operator=(const reverse_iterator & it);
+		private:
+			friend class AVL;
+			typename bintree<pair<T,altura>>::inorder_iterator iter;
+	};
+	
+	class const_reverse_iterator{
+		public:
+			const_reverse_iterator();
+			const_reverse_iterator(const reverse_iterator & it);
+			const_reverse_iterator(const const_reverse_iterator & it);
+			T operator*();
+			const_reverse_iterator & operator++();
+			const_reverse_iterator & operator--();
+			bool operator==(const const_reverse_iterator & it);
+			bool operator!=(const const_reverse_iterator & it);
+			const_reverse_iterator & operator=(const const_reverse_iterator & it);
+		private:
+			friend class AVL;
+			typename bintree<pair<T,altura>>::const_inorder_iterator iter;
+	};
+	  
+private:
+  // Metodos privados
+    altura h(const typename bintree<pair<T,altura> >::node & n);
+    altura h(const typename bintree<pair<T,altura> >::const_node & n);
+ // Representacion
+  bintree <pair<T,altura> > el_avl;
+  unsigned int tama;
+  comparar cmp;
+  friend class iterator;
+  friend class const_iterator;
+  friend class reverse_iterator;
+  friend class const_reverse_iterator;
+};
+
+
+#include "avl.hxx"
+
+#endif
+

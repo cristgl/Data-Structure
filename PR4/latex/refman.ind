@@ -1,0 +1,359 @@
+\begin{theindex}
+
+  \item {Arrest}
+    \subitem {crimen}, \hyperpage{20}
+
+  \indexspace
+
+  \item {begin}
+    \subitem {conjunto}, \hyperpage{8}
+
+  \indexspace
+
+  \item {c\discretionary {-}{}{}\_\discretionary {-}{}{}itv}
+    \subitem {conjunto\discretionary {-}{}{}::const\discretionary {-}{}{}\_\discretionary {-}{}{}iterator}, 
+		\hyperpage{15}
+  \item {Case\discretionary {-}{}{}Number}
+    \subitem {crimen}, \hyperpage{20}
+  \item {cbegin}
+    \subitem {conjunto}, \hyperpage{8}
+  \item {cend}
+    \subitem {conjunto}, \hyperpage{8}
+  \item {cheq\discretionary {-}{}{}\_\discretionary {-}{}{}rep}
+    \subitem {conjunto}, \hyperpage{8}
+  \item {comp}
+    \subitem {conjunto}, \hyperpage{13}
+  \item {conjunto}
+    \subitem {begin}, \hyperpage{8}
+    \subitem {cbegin}, \hyperpage{8}
+    \subitem {cend}, \hyperpage{8}
+    \subitem {cheq\discretionary {-}{}{}\_\discretionary {-}{}{}rep}, 
+		\hyperpage{8}
+    \subitem {comp}, \hyperpage{13}
+    \subitem {conjunto}, \hyperpage{8}
+    \subitem {const\discretionary {-}{}{}\_\discretionary {-}{}{}iterator}, 
+		\hyperpage{13}
+    \subitem {empty}, \hyperpage{8}
+    \subitem {end}, \hyperpage{9}
+    \subitem {entrada}, \hyperpage{8}
+    \subitem {erase}, \hyperpage{9}
+    \subitem {find}, \hyperpage{9}, \hyperpage{11}
+    \subitem {find\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R}, 
+		\hyperpage{11}
+    \subitem {find\discretionary {-}{}{}I\discretionary {-}{}{}U\discretionary {-}{}{}C\discretionary {-}{}{}R}, 
+		\hyperpage{12}
+    \subitem {insert}, \hyperpage{12}
+    \subitem {iterator}, \hyperpage{13}
+    \subitem {lower\discretionary {-}{}{}\_\discretionary {-}{}{}bound}, 
+		\hyperpage{12}
+    \subitem {operator=}, \hyperpage{12}
+    \subitem {size}, \hyperpage{13}
+    \subitem {size\discretionary {-}{}{}\_\discretionary {-}{}{}type}, 
+		\hyperpage{8}
+    \subitem {upper\discretionary {-}{}{}\_\discretionary {-}{}{}bound}, 
+		\hyperpage{13}
+    \subitem {vc}, \hyperpage{13}
+  \item {conjunto$<$ C\discretionary {-}{}{}M\discretionary {-}{}{}P $>$}, 
+		\hyperpage{5}
+    \subitem {conjunto\discretionary {-}{}{}::const\discretionary {-}{}{}\_\discretionary {-}{}{}iterator}, 
+		\hyperpage{15}
+    \subitem {conjunto\discretionary {-}{}{}::iterator}, \hyperpage{25}
+  \item {conjunto$<$ C\discretionary {-}{}{}M\discretionary {-}{}{}P $>$\discretionary {-}{}{}::const\discretionary {-}{}{}\_\discretionary {-}{}{}iterator}, 
+		\hyperpage{13}
+  \item {conjunto$<$ C\discretionary {-}{}{}M\discretionary {-}{}{}P $>$\discretionary {-}{}{}::iterator}, 
+		\hyperpage{23}
+  \item {conjunto.\discretionary {-}{}{}h}, \hyperpage{26}
+  \item {conjunto\discretionary {-}{}{}::const\discretionary {-}{}{}\_\discretionary {-}{}{}iterator}
+    \subitem {c\discretionary {-}{}{}\_\discretionary {-}{}{}itv}, 
+		\hyperpage{15}
+    \subitem {conjunto$<$ C\discretionary {-}{}{}M\discretionary {-}{}{}P $>$}, 
+		\hyperpage{15}
+    \subitem {const\discretionary {-}{}{}\_\discretionary {-}{}{}iterator}, 
+		\hyperpage{14}
+    \subitem {operator$\ast $}, \hyperpage{14}
+    \subitem {operator++}, \hyperpage{14}
+    \subitem {operator-\/-\/}, \hyperpage{15}
+    \subitem {operator=}, \hyperpage{15}
+    \subitem {operator==}, \hyperpage{15}
+  \item {conjunto\discretionary {-}{}{}::iterator}
+    \subitem {conjunto$<$ C\discretionary {-}{}{}M\discretionary {-}{}{}P $>$}, 
+		\hyperpage{25}
+    \subitem {iterator}, \hyperpage{23}
+    \subitem {itv}, \hyperpage{25}
+    \subitem {operator$\ast $}, \hyperpage{25}
+    \subitem {operator++}, \hyperpage{25}
+    \subitem {operator-\/-\/}, \hyperpage{25}
+    \subitem {operator=}, \hyperpage{25}
+    \subitem {operator==}, \hyperpage{25}
+  \item {const\discretionary {-}{}{}\_\discretionary {-}{}{}iterator}
+    \subitem {conjunto}, \hyperpage{13}
+    \subitem {conjunto\discretionary {-}{}{}::const\discretionary {-}{}{}\_\discretionary {-}{}{}iterator}, 
+		\hyperpage{14}
+  \item {crimen}, \hyperpage{15}
+    \subitem {Arrest}, \hyperpage{20}
+    \subitem {Case\discretionary {-}{}{}Number}, \hyperpage{20}
+    \subitem {crimen}, \hyperpage{17}
+    \subitem {Date}, \hyperpage{20}
+    \subitem {Description}, \hyperpage{20}
+    \subitem {Domestic}, \hyperpage{20}
+    \subitem {get\discretionary {-}{}{}Arrest}, \hyperpage{17}
+    \subitem {get\discretionary {-}{}{}Case\discretionary {-}{}{}Number}, 
+		\hyperpage{17}
+    \subitem {get\discretionary {-}{}{}Date}, \hyperpage{18}
+    \subitem {get\discretionary {-}{}{}Description}, \hyperpage{18}
+    \subitem {get\discretionary {-}{}{}Domestic}, \hyperpage{18}
+    \subitem {get\discretionary {-}{}{}I\discretionary {-}{}{}D}, 
+		\hyperpage{18}
+    \subitem {get\discretionary {-}{}{}I\discretionary {-}{}{}U\discretionary {-}{}{}C\discretionary {-}{}{}R}, 
+		\hyperpage{18}
+    \subitem {get\discretionary {-}{}{}Latitude}, \hyperpage{18}
+    \subitem {get\discretionary {-}{}{}Location\discretionary {-}{}{}Description}, 
+		\hyperpage{18}
+    \subitem {get\discretionary {-}{}{}Longitude}, \hyperpage{18}
+    \subitem {get\discretionary {-}{}{}Primary\discretionary {-}{}{}Type}, 
+		\hyperpage{18}
+    \subitem {I\discretionary {-}{}{}D}, \hyperpage{20}
+    \subitem {I\discretionary {-}{}{}U\discretionary {-}{}{}C\discretionary {-}{}{}R}, 
+		\hyperpage{20}
+    \subitem {Latitude}, \hyperpage{21}
+    \subitem {Location\discretionary {-}{}{}Description}, 
+		\hyperpage{21}
+    \subitem {Longitude}, \hyperpage{21}
+    \subitem {operator$<$}, \hyperpage{18}
+    \subitem {operator$<$$<$}, \hyperpage{20}
+    \subitem {operator=}, \hyperpage{18}
+    \subitem {operator==}, \hyperpage{18}
+    \subitem {Primary\discretionary {-}{}{}Type}, \hyperpage{21}
+    \subitem {set\discretionary {-}{}{}Arrest}, \hyperpage{19}
+    \subitem {set\discretionary {-}{}{}Case\discretionary {-}{}{}Number}, 
+		\hyperpage{19}
+    \subitem {set\discretionary {-}{}{}Date}, \hyperpage{19}
+    \subitem {set\discretionary {-}{}{}Description}, \hyperpage{19}
+    \subitem {set\discretionary {-}{}{}Domestic}, \hyperpage{19}
+    \subitem {set\discretionary {-}{}{}I\discretionary {-}{}{}D}, 
+		\hyperpage{19}
+    \subitem {set\discretionary {-}{}{}I\discretionary {-}{}{}U\discretionary {-}{}{}C\discretionary {-}{}{}R}, 
+		\hyperpage{19}
+    \subitem {set\discretionary {-}{}{}Latitude}, \hyperpage{20}
+    \subitem {set\discretionary {-}{}{}Location\discretionary {-}{}{}Description}, 
+		\hyperpage{20}
+    \subitem {set\discretionary {-}{}{}Longitude}, \hyperpage{20}
+    \subitem {set\discretionary {-}{}{}Primary\discretionary {-}{}{}Type}, 
+		\hyperpage{20}
+  \item {crimen.\discretionary {-}{}{}h}, \hyperpage{26}
+    \subitem {operator$<$$<$}, \hyperpage{26}
+
+  \indexspace
+
+  \item {Date}
+    \subitem {crimen}, \hyperpage{20}
+  \item {Description}
+    \subitem {crimen}, \hyperpage{20}
+  \item {documentacion.\discretionary {-}{}{}dox}, \hyperpage{26}
+  \item {Domestic}
+    \subitem {crimen}, \hyperpage{20}
+
+  \indexspace
+
+  \item {empty}
+    \subitem {conjunto}, \hyperpage{8}
+  \item {end}
+    \subitem {conjunto}, \hyperpage{9}
+  \item {entrada}
+    \subitem {conjunto}, \hyperpage{8}
+  \item {erase}
+    \subitem {conjunto}, \hyperpage{9}
+
+  \indexspace
+
+  \item {fecha}, \hyperpage{21}
+    \subitem {fecha}, \hyperpage{22}
+    \subitem {hour}, \hyperpage{22}
+    \subitem {mday}, \hyperpage{22}
+    \subitem {min}, \hyperpage{22}
+    \subitem {mon}, \hyperpage{22}
+    \subitem {operator$<$}, \hyperpage{22}
+    \subitem {operator$<$$<$}, \hyperpage{22}
+    \subitem {operator$<$=}, \hyperpage{22}
+    \subitem {operator$>$}, \hyperpage{22}
+    \subitem {operator$>$=}, \hyperpage{22}
+    \subitem {operator=}, \hyperpage{22}
+    \subitem {operator==}, \hyperpage{22}
+    \subitem {sec}, \hyperpage{22}
+    \subitem {to\discretionary {-}{}{}String}, \hyperpage{22}
+    \subitem {year}, \hyperpage{22}
+  \item {fecha.\discretionary {-}{}{}h}, \hyperpage{26}
+    \subitem {operator$<$$<$}, \hyperpage{27}
+  \item {fecha.\discretionary {-}{}{}hxx}, \hyperpage{27}
+    \subitem {operator$<$$<$}, \hyperpage{27}
+  \item {find}
+    \subitem {conjunto}, \hyperpage{9}, \hyperpage{11}
+  \item {find\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R}
+    \subitem {conjunto}, \hyperpage{11}
+  \item {find\discretionary {-}{}{}I\discretionary {-}{}{}U\discretionary {-}{}{}C\discretionary {-}{}{}R}
+    \subitem {conjunto}, \hyperpage{12}
+
+  \indexspace
+
+  \item {get\discretionary {-}{}{}Arrest}
+    \subitem {crimen}, \hyperpage{17}
+  \item {get\discretionary {-}{}{}Case\discretionary {-}{}{}Number}
+    \subitem {crimen}, \hyperpage{17}
+  \item {get\discretionary {-}{}{}Date}
+    \subitem {crimen}, \hyperpage{18}
+  \item {get\discretionary {-}{}{}Description}
+    \subitem {crimen}, \hyperpage{18}
+  \item {get\discretionary {-}{}{}Domestic}
+    \subitem {crimen}, \hyperpage{18}
+  \item {get\discretionary {-}{}{}I\discretionary {-}{}{}D}
+    \subitem {crimen}, \hyperpage{18}
+  \item {get\discretionary {-}{}{}I\discretionary {-}{}{}U\discretionary {-}{}{}C\discretionary {-}{}{}R}
+    \subitem {crimen}, \hyperpage{18}
+  \item {get\discretionary {-}{}{}Latitude}
+    \subitem {crimen}, \hyperpage{18}
+  \item {get\discretionary {-}{}{}Location\discretionary {-}{}{}Description}
+    \subitem {crimen}, \hyperpage{18}
+  \item {get\discretionary {-}{}{}Longitude}
+    \subitem {crimen}, \hyperpage{18}
+  \item {get\discretionary {-}{}{}Primary\discretionary {-}{}{}Type}
+    \subitem {crimen}, \hyperpage{18}
+
+  \indexspace
+
+  \item {hour}
+    \subitem {fecha}, \hyperpage{22}
+
+  \indexspace
+
+  \item {I\discretionary {-}{}{}D}
+    \subitem {crimen}, \hyperpage{20}
+  \item {I\discretionary {-}{}{}U\discretionary {-}{}{}C\discretionary {-}{}{}R}
+    \subitem {crimen}, \hyperpage{20}
+  \item {insert}
+    \subitem {conjunto}, \hyperpage{12}
+  \item {iterator}
+    \subitem {conjunto}, \hyperpage{13}
+    \subitem {conjunto\discretionary {-}{}{}::iterator}, \hyperpage{23}
+  \item {itv}
+    \subitem {conjunto\discretionary {-}{}{}::iterator}, \hyperpage{25}
+
+  \indexspace
+
+  \item {Latitude}
+    \subitem {crimen}, \hyperpage{21}
+  \item {Location\discretionary {-}{}{}Description}
+    \subitem {crimen}, \hyperpage{21}
+  \item {Longitude}
+    \subitem {crimen}, \hyperpage{21}
+  \item {lower\discretionary {-}{}{}\_\discretionary {-}{}{}bound}
+    \subitem {conjunto}, \hyperpage{12}
+
+  \indexspace
+
+  \item {mday}
+    \subitem {fecha}, \hyperpage{22}
+  \item {min}
+    \subitem {fecha}, \hyperpage{22}
+  \item {mon}
+    \subitem {fecha}, \hyperpage{22}
+
+  \indexspace
+
+  \item {operator$<$}
+    \subitem {crimen}, \hyperpage{18}
+    \subitem {fecha}, \hyperpage{22}
+  \item {operator$<$$<$}
+    \subitem {crimen}, \hyperpage{20}
+    \subitem {crimen.\discretionary {-}{}{}h}, \hyperpage{26}
+    \subitem {fecha}, \hyperpage{22}
+    \subitem {fecha.\discretionary {-}{}{}h}, \hyperpage{27}
+    \subitem {fecha.\discretionary {-}{}{}hxx}, \hyperpage{27}
+  \item {operator$<$=}
+    \subitem {fecha}, \hyperpage{22}
+  \item {operator$>$}
+    \subitem {fecha}, \hyperpage{22}
+  \item {operator$>$=}
+    \subitem {fecha}, \hyperpage{22}
+  \item {operator$\ast $}
+    \subitem {conjunto\discretionary {-}{}{}::const\discretionary {-}{}{}\_\discretionary {-}{}{}iterator}, 
+		\hyperpage{14}
+    \subitem {conjunto\discretionary {-}{}{}::iterator}, \hyperpage{25}
+  \item {operator++}
+    \subitem {conjunto\discretionary {-}{}{}::const\discretionary {-}{}{}\_\discretionary {-}{}{}iterator}, 
+		\hyperpage{14}
+    \subitem {conjunto\discretionary {-}{}{}::iterator}, \hyperpage{25}
+  \item {operator-\/-\/}
+    \subitem {conjunto\discretionary {-}{}{}::const\discretionary {-}{}{}\_\discretionary {-}{}{}iterator}, 
+		\hyperpage{15}
+    \subitem {conjunto\discretionary {-}{}{}::iterator}, \hyperpage{25}
+  \item {operator=}
+    \subitem {conjunto}, \hyperpage{12}
+    \subitem {conjunto\discretionary {-}{}{}::const\discretionary {-}{}{}\_\discretionary {-}{}{}iterator}, 
+		\hyperpage{15}
+    \subitem {conjunto\discretionary {-}{}{}::iterator}, \hyperpage{25}
+    \subitem {crimen}, \hyperpage{18}
+    \subitem {fecha}, \hyperpage{22}
+  \item {operator==}
+    \subitem {conjunto\discretionary {-}{}{}::const\discretionary {-}{}{}\_\discretionary {-}{}{}iterator}, 
+		\hyperpage{15}
+    \subitem {conjunto\discretionary {-}{}{}::iterator}, \hyperpage{25}
+    \subitem {crimen}, \hyperpage{18}
+    \subitem {fecha}, \hyperpage{22}
+
+  \indexspace
+
+  \item {Primary\discretionary {-}{}{}Type}
+    \subitem {crimen}, \hyperpage{21}
+
+  \indexspace
+
+  \item {sec}
+    \subitem {fecha}, \hyperpage{22}
+  \item {set\discretionary {-}{}{}Arrest}
+    \subitem {crimen}, \hyperpage{19}
+  \item {set\discretionary {-}{}{}Case\discretionary {-}{}{}Number}
+    \subitem {crimen}, \hyperpage{19}
+  \item {set\discretionary {-}{}{}Date}
+    \subitem {crimen}, \hyperpage{19}
+  \item {set\discretionary {-}{}{}Description}
+    \subitem {crimen}, \hyperpage{19}
+  \item {set\discretionary {-}{}{}Domestic}
+    \subitem {crimen}, \hyperpage{19}
+  \item {set\discretionary {-}{}{}I\discretionary {-}{}{}D}
+    \subitem {crimen}, \hyperpage{19}
+  \item {set\discretionary {-}{}{}I\discretionary {-}{}{}U\discretionary {-}{}{}C\discretionary {-}{}{}R}
+    \subitem {crimen}, \hyperpage{19}
+  \item {set\discretionary {-}{}{}Latitude}
+    \subitem {crimen}, \hyperpage{20}
+  \item {set\discretionary {-}{}{}Location\discretionary {-}{}{}Description}
+    \subitem {crimen}, \hyperpage{20}
+  \item {set\discretionary {-}{}{}Longitude}
+    \subitem {crimen}, \hyperpage{20}
+  \item {set\discretionary {-}{}{}Primary\discretionary {-}{}{}Type}
+    \subitem {crimen}, \hyperpage{20}
+  \item {size}
+    \subitem {conjunto}, \hyperpage{13}
+  \item {size\discretionary {-}{}{}\_\discretionary {-}{}{}type}
+    \subitem {conjunto}, \hyperpage{8}
+
+  \indexspace
+
+  \item {to\discretionary {-}{}{}String}
+    \subitem {fecha}, \hyperpage{22}
+
+  \indexspace
+
+  \item {upper\discretionary {-}{}{}\_\discretionary {-}{}{}bound}
+    \subitem {conjunto}, \hyperpage{13}
+
+  \indexspace
+
+  \item {vc}
+    \subitem {conjunto}, \hyperpage{13}
+
+  \indexspace
+
+  \item {year}
+    \subitem {fecha}, \hyperpage{22}
+
+\end{theindex}

@@ -1,0 +1,158 @@
+while((!n.right().null() || !n.left().null()) && !salir){// n es el padre del que acabamos de insertar
+		cout << "la dif entre alturas es " << abs(h(n.left())-h(n.right())) << endl;
+			if(abs(h(n.left())-h(n.right()))>1){cout << "vamos a ver, n es " << (*n).first << endl;
+				if(h(n.left())<h(n.right())){ // nos metemos en la rama con más altura, en este caso la derecha
+					if(!n.right().right().null()){//tiene hijo der -> **RSI**
+						bintree<pair<T,altura>> dest;
+						typename bintree<pair<T,altura>>::node n1;
+						el_avl.prune_right(n,dest);
+						n1=dest.root();
+						bintree<pair<T,altura>> tree(el_avl);
+						if(!n1.left().null()){
+							bintree<pair<T,altura>> dest1;
+							el_avl.prune_left(n1,dest1);
+							tree.insert_right(n,dest1);
+						}
+						if(!n.parent().null()){
+							bintree<pair<T,altura>> dest2;
+							if((*n.parent()).first<(*n).first){
+								el_avl.prune_right(n.parent(),dest2);
+								el_avl.insert_right(n.parent(),dest);
+							}else{
+								el_avl.prune_left(n.parent(),dest2);		
+								el_avl.insert_left(n.parent(),dest);						
+							}
+						}
+						el_avl.insert_left(n1,tree);
+						
+					}else if(!n.right().left().null()){// || !n.right().left().right().null()){//tiene hijo izq con hijo -> **RDDI**
+						// Rotación simple de n.right() a la derecha
+						bintree<pair<T,altura>> dest;
+						typename bintree<pair<T,altura>>::node n1;
+						el_avl.prune_left(n.right(),dest);
+						n1=dest.root();
+						bintree<pair<T,altura>> tree;
+						tree.assign_subtree(el_avl,n.right());
+						if(!n1.right().null()){
+							bintree<pair<T,altura>> dest1;
+							el_avl.prune_right(n1,dest1);
+							tree.insert_left(n.right(),dest1);
+						}
+						if(!n.right().parent().null()){
+							bintree<pair<T,altura>> dest2;
+							if((*n.right().parent()).first<(*n.right()).first){
+								el_avl.prune_right(n.right().parent(),dest2);
+								el_avl.insert_right(n.right().parent(),dest);
+							}else{
+								el_avl.prune_left(n.right().parent(),dest2);		
+								el_avl.insert_left(n.right().parent(),dest);						
+							}
+						}
+						el_avl.insert_right(n1,tree);
+						
+						//Rotación simple de n a la izquierda
+						bintree<pair<T,altura>> dest3;
+						typename bintree<pair<T,altura>>::node n2;
+						el_avl.prune_right(n,dest3);
+						n2=dest.root();
+						bintree<pair<T,altura>> tree1;
+						tree1.assign_subtree(el_avl,n);
+						if(!n2.left().null()){
+							bintree<pair<T,altura>> dest4;
+							el_avl.prune_left(n2,dest4);
+							tree1.insert_right(n,dest4);
+						}
+						if(!n.parent().null()){
+							bintree<pair<T,altura>> dest5;
+							if((*n.parent()).first<(*n).first){
+								el_avl.prune_right(n.parent(),dest5);
+								el_avl.insert_right(n.parent(),dest3);
+							}else{
+								el_avl.prune_left(n.parent(),dest5);		
+								el_avl.insert_left(n.parent(),dest3);						
+							}
+						}
+						el_avl.insert_left(n2,tree1);
+					}
+				}else{//la rama con más altura es la izquierda
+					if(!n.left().left().null()){//tiene otro hijo izq -> **RSD**
+						bintree<pair<T,altura>> dest;
+						typename bintree<pair<T,altura>>::node n1;
+						el_avl.prune_left(n,dest);
+						n1=dest.root();
+						bintree<pair<T,altura>> tree;
+						tree.assign_subtree(el_avl,n);
+						if(!n1.right().null()){
+							bintree<pair<T,altura>> dest1;
+							el_avl.prune_right(n1,dest1);
+							tree.insert_left(n,dest1);
+						}
+						if(!n.parent().null()){
+							bintree<pair<T,altura>> dest2;
+							if((*n.parent()).first<(*n).first){
+								el_avl.prune_right(n.parent(),dest2);
+								el_avl.insert_right(n.parent(),dest);
+							}else{
+								el_avl.prune_left(n.parent(),dest2);		
+								el_avl.insert_left(n.parent(),dest);						
+							}
+						}
+						el_avl.insert_right(n1,tree);
+						
+					}else if(!n.left().right().null()){// || !n.left().right().right().null()){//tiene hijo der con hijo -> **RDID**
+						//Rotación simple de n.left() a la izquierda
+						bintree<pair<T,altura>> dest;
+						typename bintree<pair<T,altura>>::node n1;
+						el_avl.prune_right(n.left(),dest);
+						n1=dest.root();
+						bintree<pair<T,altura>> tree;
+						tree.assign_subtree(el_avl,n.left());
+						if(!n1.left().null()){
+							bintree<pair<T,altura>> dest1;
+							el_avl.prune_left(n1,dest1);
+							tree.insert_right(n.left(),dest1);
+						}
+						if(!n.left().parent().null()){
+							bintree<pair<T,altura>> dest2;
+							if((*n.left().parent()).first<(*n.left()).first){
+								el_avl.prune_right(n.left().parent(),dest2);
+								el_avl.insert_right(n.left().parent(),dest);
+							}else{
+								el_avl.prune_left(n.left().parent(),dest2);		
+								el_avl.insert_left(n.left().parent(),dest);						
+							}
+						}
+						el_avl.insert_left(n1,tree);
+						
+						//Rotación simple de n a la derecha
+						bintree<pair<T,altura>> dest3;
+						typename bintree<pair<T,altura>>::node n2;
+						el_avl.prune_left(n,dest3);
+						n2=dest.root();
+						bintree<pair<T,altura>> tree1;
+						tree1.assign_subtree(el_avl,n);
+						if(!n2.right().null()){
+							bintree<pair<T,altura>> dest4;
+							el_avl.prune_right(n2,dest4);
+							tree1.insert_left(n,dest4);
+						}
+						if(!n.parent().null()){
+							bintree<pair<T,altura>> dest5;
+							if((*n.parent()).first<(*n).first){
+								el_avl.prune_right(n.parent(),dest5);
+								el_avl.insert_right(n.parent(),dest3);
+							}else{
+								el_avl.prune_left(n.parent(),dest5);		
+								el_avl.insert_left(n.parent(),dest3);						
+							}
+						}
+						el_avl.insert_right(n2,tree1);
+					}
+				}
+			}else{//subimos un nodo
+				if(!n.parent().null())
+					n=n.parent();
+				else
+					salir=true;
+			}
+		}

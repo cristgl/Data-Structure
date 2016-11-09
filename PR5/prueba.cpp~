@@ -1,0 +1,15 @@
+#include <functional>
+#include "crimen.h"
+#include "CSS.h"
+#include "fecha.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+
+//-std=c++0x
+
+int main(){
+
+	//CSS X;
+
+}

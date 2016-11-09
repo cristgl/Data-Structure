@@ -1,0 +1,211 @@
+\hypertarget{classconjunto_1_1description__iterator}{\subsection{Referencia de la Clase conjunto\-:\-:description\-\_\-iterator}
+\label{classconjunto_1_1description__iterator}\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}}
+}
+
+
+class \hyperlink{classconjunto_1_1description__iterator}{description\-\_\-iterator} forward iterador constante sobre el diccionario, Lectura \hyperlink{classconjunto_1_1const__iterator}{const\-\_\-iterator} ,operator$\ast$, operator++, \hyperlink{classconjunto_1_1description__iterator_a64fc4430bdd907e7ee03992c77f419af}{operator++(int)} operator=, operator==, operator!= esta clase itera sobre todos los elementos que emparejan con una descripcion  
+
+
+
+
+{\ttfamily \#include $<$conjunto.\-h$>$}
+
+\subsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classconjunto_1_1description__iterator_a2aecc33a859c4f8a83265c5867dcac8b}{description\-\_\-iterator} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto del iterador. \end{DoxyCompactList}\item 
+\hyperlink{classconjunto_1_1description__iterator_af211c5428de96fa6f7da7dff6890d2f6}{description\-\_\-iterator} (const \hyperlink{classconjunto_1_1description__iterator}{description\-\_\-iterator} \&it)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+const \hyperlink{classconjunto_a09cad766dd65de73e51eae21f9d22585}{conjunto\-::entrada} \& \hyperlink{classconjunto_1_1description__iterator_a8e3842efe7588b670d4297eb73a74a6e}{operator$\ast$} () const 
+\begin{DoxyCompactList}\small\item\em Operador $\ast$ para acceder al contenido del iterador. \end{DoxyCompactList}\item 
+\hyperlink{classconjunto_1_1description__iterator}{description\-\_\-iterator} \hyperlink{classconjunto_1_1description__iterator_a64fc4430bdd907e7ee03992c77f419af}{operator++} (int)
+\begin{DoxyCompactList}\small\item\em Operador ++ para el postincremento del iterador. \end{DoxyCompactList}\item 
+\hyperlink{classconjunto_1_1description__iterator}{description\-\_\-iterator} \& \hyperlink{classconjunto_1_1description__iterator_a73efd92cc389baa8b07422fc7673c097}{operator++} ()
+\begin{DoxyCompactList}\small\item\em Operador ++ para el preincremento. \end{DoxyCompactList}\item 
+\hyperlink{classconjunto_1_1description__iterator}{description\-\_\-iterator} \hyperlink{classconjunto_1_1description__iterator_a769be6668c822728c8a1bbe3f6306e97}{operator-\/-\/} (int)
+\begin{DoxyCompactList}\small\item\em Operador -- para el postdecremento del iterador. \end{DoxyCompactList}\item 
+\hyperlink{classconjunto_1_1description__iterator}{description\-\_\-iterator} \& \hyperlink{classconjunto_1_1description__iterator_a5112fc3cf352c2d36544a009e9401a01}{operator-\/-\/} ()
+\begin{DoxyCompactList}\small\item\em Operador -- para el predecremento del iterador. \end{DoxyCompactList}\item 
+bool \hyperlink{classconjunto_1_1description__iterator_a2345c529afc081064179771f8ab78f4f}{operator==} (const \hyperlink{classconjunto_1_1description__iterator}{description\-\_\-iterator} \&it)
+\begin{DoxyCompactList}\small\item\em Operador == que comprueba si dos iteradores son iguales. \end{DoxyCompactList}\item 
+bool \hyperlink{classconjunto_1_1description__iterator_a32abef6ce2560b8e042316047aef0572}{operator!=} (const \hyperlink{classconjunto_1_1description__iterator}{description\-\_\-iterator} \&it)
+\begin{DoxyCompactList}\small\item\em Operador != que comprueba si dos iteradores son distintos. \end{DoxyCompactList}\item 
+\hyperlink{classconjunto_1_1description__iterator}{description\-\_\-iterator} \& \hyperlink{classconjunto_1_1description__iterator_a2e1599c1c023e8effefea77b83d39706}{operator=} (const \hyperlink{classconjunto_1_1description__iterator}{description\-\_\-iterator} \&it)
+\begin{DoxyCompactList}\small\item\em Operador de asignacion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+const vector$<$ \hyperlink{classconjunto_a09cad766dd65de73e51eae21f9d22585}{entrada} $>$ $\ast$ \hyperlink{classconjunto_1_1description__iterator_a0bb45955205380b163640be067af2cd1}{mi\-\_\-conj}
+\item 
+string \hyperlink{classconjunto_1_1description__iterator_a3af23f14ec44378308e577ba8c9c71e0}{descr}
+\item 
+vector$<$ \hyperlink{classconjunto_a09cad766dd65de73e51eae21f9d22585}{entrada} $>$\-::\hyperlink{classconjunto_1_1iterator}{iterator} \hyperlink{classconjunto_1_1description__iterator_ac4c653cecb7c8076a40338775b2b911b}{itv}
+\end{DoxyCompactItemize}
+\subsubsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classconjunto_1_1description__iterator_a42fdcda39c77eabd7380e29fcdbe5dd2}{conjunto}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Descripción detallada}
+class \hyperlink{classconjunto_1_1description__iterator}{description\-\_\-iterator} forward iterador constante sobre el diccionario, Lectura \hyperlink{classconjunto_1_1const__iterator}{const\-\_\-iterator} ,operator$\ast$, operator++, \hyperlink{classconjunto_1_1description__iterator_a64fc4430bdd907e7ee03992c77f419af}{operator++(int)} operator=, operator==, operator!= esta clase itera sobre todos los elementos que emparejan con una descripcion 
+
+\subsubsection{Documentación del constructor y destructor}
+\hypertarget{classconjunto_1_1description__iterator_a2aecc33a859c4f8a83265c5867dcac8b}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!description\-\_\-iterator@{description\-\_\-iterator}}
+\index{description\-\_\-iterator@{description\-\_\-iterator}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{description\-\_\-iterator}]{\setlength{\rightskip}{0pt plus 5cm}conjunto\-::description\-\_\-iterator\-::description\-\_\-iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classconjunto_1_1description__iterator_a2aecc33a859c4f8a83265c5867dcac8b}
+
+
+Constructor por defecto del iterador. 
+
+\hypertarget{classconjunto_1_1description__iterator_af211c5428de96fa6f7da7dff6890d2f6}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!description\-\_\-iterator@{description\-\_\-iterator}}
+\index{description\-\_\-iterator@{description\-\_\-iterator}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{description\-\_\-iterator}]{\setlength{\rightskip}{0pt plus 5cm}conjunto\-::description\-\_\-iterator\-::description\-\_\-iterator (
+\begin{DoxyParamCaption}
+\item[{const {\bf description\-\_\-iterator} \&}]{it}
+\end{DoxyParamCaption}
+)}}\label{classconjunto_1_1description__iterator_af211c5428de96fa6f7da7dff6890d2f6}
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em it} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Documentación de las funciones miembro}
+\hypertarget{classconjunto_1_1description__iterator_a32abef6ce2560b8e042316047aef0572}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool conjunto\-::description\-\_\-iterator\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf description\-\_\-iterator} \&}]{it}
+\end{DoxyParamCaption}
+)}}\label{classconjunto_1_1description__iterator_a32abef6ce2560b8e042316047aef0572}
+
+
+Operador != que comprueba si dos iteradores son distintos. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em it} & iterador a comparar \\
+\hline
+\end{DoxyParams}
+\hypertarget{classconjunto_1_1description__iterator_a8e3842efe7588b670d4297eb73a74a6e}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf conjunto\-::entrada}\& conjunto\-::description\-\_\-iterator\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classconjunto_1_1description__iterator_a8e3842efe7588b670d4297eb73a74a6e}
+
+
+Operador $\ast$ para acceder al contenido del iterador. 
+
+\hypertarget{classconjunto_1_1description__iterator_a64fc4430bdd907e7ee03992c77f419af}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}{\bf description\-\_\-iterator} conjunto\-::description\-\_\-iterator\-::operator++ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{classconjunto_1_1description__iterator_a64fc4430bdd907e7ee03992c77f419af}
+
+
+Operador ++ para el postincremento del iterador. 
+
+\hypertarget{classconjunto_1_1description__iterator_a73efd92cc389baa8b07422fc7673c097}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}{\bf description\-\_\-iterator}\& conjunto\-::description\-\_\-iterator\-::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classconjunto_1_1description__iterator_a73efd92cc389baa8b07422fc7673c097}
+
+
+Operador ++ para el preincremento. 
+
+\hypertarget{classconjunto_1_1description__iterator_a769be6668c822728c8a1bbe3f6306e97}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{operator-\/-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf description\-\_\-iterator} conjunto\-::description\-\_\-iterator\-::operator-\/-\/ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{classconjunto_1_1description__iterator_a769be6668c822728c8a1bbe3f6306e97}
+
+
+Operador -- para el postdecremento del iterador. 
+
+\hypertarget{classconjunto_1_1description__iterator_a5112fc3cf352c2d36544a009e9401a01}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{operator-\/-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf description\-\_\-iterator}\& conjunto\-::description\-\_\-iterator\-::operator-\/-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classconjunto_1_1description__iterator_a5112fc3cf352c2d36544a009e9401a01}
+
+
+Operador -- para el predecremento del iterador. 
+
+\hypertarget{classconjunto_1_1description__iterator_a2e1599c1c023e8effefea77b83d39706}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf description\-\_\-iterator}\& conjunto\-::description\-\_\-iterator\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf description\-\_\-iterator} \&}]{it}
+\end{DoxyParamCaption}
+)}}\label{classconjunto_1_1description__iterator_a2e1599c1c023e8effefea77b83d39706}
+
+
+Operador de asignacion. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em it} & iterador a asignar \\
+\hline
+\end{DoxyParams}
+\hypertarget{classconjunto_1_1description__iterator_a2345c529afc081064179771f8ab78f4f}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool conjunto\-::description\-\_\-iterator\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf description\-\_\-iterator} \&}]{it}
+\end{DoxyParamCaption}
+)}}\label{classconjunto_1_1description__iterator_a2345c529afc081064179771f8ab78f4f}
+
+
+Operador == que comprueba si dos iteradores son iguales. 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em it} & iterador a comparar \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Documentación de las funciones relacionadas y clases amigas}
+\hypertarget{classconjunto_1_1description__iterator_a42fdcda39c77eabd7380e29fcdbe5dd2}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!conjunto@{conjunto}}
+\index{conjunto@{conjunto}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{conjunto}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf conjunto}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classconjunto_1_1description__iterator_a42fdcda39c77eabd7380e29fcdbe5dd2}
+
+
+\subsubsection{Documentación de los datos miembro}
+\hypertarget{classconjunto_1_1description__iterator_a3af23f14ec44378308e577ba8c9c71e0}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!descr@{descr}}
+\index{descr@{descr}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{descr}]{\setlength{\rightskip}{0pt plus 5cm}string conjunto\-::description\-\_\-iterator\-::descr\hspace{0.3cm}{\ttfamily [private]}}}\label{classconjunto_1_1description__iterator_a3af23f14ec44378308e577ba8c9c71e0}
+\hypertarget{classconjunto_1_1description__iterator_ac4c653cecb7c8076a40338775b2b911b}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!itv@{itv}}
+\index{itv@{itv}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{itv}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf entrada}$>$\-::{\bf iterator} conjunto\-::description\-\_\-iterator\-::itv\hspace{0.3cm}{\ttfamily [private]}}}\label{classconjunto_1_1description__iterator_ac4c653cecb7c8076a40338775b2b911b}
+\hypertarget{classconjunto_1_1description__iterator_a0bb45955205380b163640be067af2cd1}{\index{conjunto\-::description\-\_\-iterator@{conjunto\-::description\-\_\-iterator}!mi\-\_\-conj@{mi\-\_\-conj}}
+\index{mi\-\_\-conj@{mi\-\_\-conj}!conjunto::description_iterator@{conjunto\-::description\-\_\-iterator}}
+\paragraph[{mi\-\_\-conj}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<${\bf entrada}$>$$\ast$ conjunto\-::description\-\_\-iterator\-::mi\-\_\-conj\hspace{0.3cm}{\ttfamily [private]}}}\label{classconjunto_1_1description__iterator_a0bb45955205380b163640be067af2cd1}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{conjunto_8h}{conjunto.\-h}\end{DoxyCompactItemize}
